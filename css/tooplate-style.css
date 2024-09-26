@@ -1,20 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 
 body {
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Popins', sans-serif;
   padding-top: 70px;
-  background-color: rgb(230, 194, 210);
+  background-color: #f5f5f5;
 }
+  
+
 
 .full-screen {
   padding: 8rem 0;
   margin-bottom: 25px;
   border-radius: 15px;
-  /*background-size: cover;
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
   background-position: center;
-  background-color: #ffffff;
-  border-bottom: 1pxsolid #2121211f; */
+  animation: slide 20s infinite alternate;
 }
+
 
 .small-text {
   color: #5b5b5b;
@@ -59,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #212121;
+  color: #2c2c2c;
   font-size: 2.8em;
   margin: 24px 0;
 }
@@ -77,6 +80,7 @@ h3 {
 h3,
 b, strong {
   font-weight: bold;
+
 }
 
 .custom-btn {
@@ -315,6 +319,10 @@ b, strong {
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
 }
 
 .timeline-wrapper:last-child:before {
@@ -410,6 +418,14 @@ b, strong {
   background: #970b8c;
 }
 
+/* Contatos */
+.contact {
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
+}
+
 .google-map img {
   width: 100%;
   border-radius: 20px;
@@ -459,6 +475,7 @@ b, strong {
   border-radius: 0 0 3px 3px;
   position: relative;
   bottom: -8px;
+  gap: 10px;
 }
 .contact-info p, .contact-info a {
   color: #f7f3f3;
@@ -529,8 +546,15 @@ b, strong {
 }
 
 @media (max-width: 580px)   {
-	.animated-info {
-		min-width: 50px;
+	.full-screen {
+    background-image: url(../images/adriana/Telafundo020.png);
+    background-size: 500px;
+    background-position: center;
+  }
+  
+  
+  .animated-info {
+		min-width: 52px;
 	}
 
   .animated-item {
@@ -587,12 +611,22 @@ b, strong {
 }
 
 @media (max-width: 320px) {
+  .full-screen {
+    background-image: url(../images/adriana/Telafundo020.png);
+    background-size: 500px;
+    background-position: center;
+  }
+  
+
+  
   .animated-text {
     margin-top: 0;
   }
 
   .animated-item {
-    font-size: 400px;
+    position: relative;
+   text-align: center;
+    font-size: 38px;
   }
 
   .about-text {
@@ -628,9 +662,10 @@ b, strong {
   padding: 153px;
   text-align: center;
   clear: both;
-  /* background-image: url(../images/project/tela_fundo2.svg);
-  background-size: cover;
-  background-position: center; */
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
 }
 
 .secao-com-texto img {
@@ -711,6 +746,10 @@ b, strong {
 /* Depoimentos */
 .project {
   padding: 50px 0;
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
 }
 
 .project .title {
@@ -781,6 +820,10 @@ b, strong {
 .servicos {
   padding-top: 100px;
   padding-bottom: 150px;
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
 }
 
 .hint-title {
@@ -822,17 +865,6 @@ b, strong {
   font-size: 18px;
 }
 
-.background-servicos {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 500px;
-  background-image: url(../img/bg-icons-2.png);
-}
-
-
-
-
 
 /* Animations */
 @keyframes gradient-animation {
@@ -849,11 +881,25 @@ b, strong {
   }
 }
 
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
 /* Redes sociais */
 
 .social-media {
   display: flex;
   gap: 20px;
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
 }
 
 .social-media a i {
@@ -903,6 +949,13 @@ b, strong {
 }
 
 /* Planos */
+.planos {
+  background-image: url(../images/adriana/Telafundo020.png);
+  background-size: 500px;
+  background-position: center;
+  animation: slide 20s infinite alternate;
+}
+
 .card {
   background-color: #9807a521;
 }
@@ -911,11 +964,30 @@ b, strong {
   color: #0c0c0d;
 }
 
-.card button {
+.h6-2 {
+  background-color: #fc0303!important;
+}
+
+.card .b1 {
   color: white;
   font-weight: bold;
-  background-color: #dd5073;
+  background-color: #0c55ddd5;
+  border: 1px solid blue;
+}
+
+.card .b1:hover {
+  background-color: rgb(3, 43, 224);
+}
+
+.card .b2 {
+  color: white;
+  font-weight: bold;
+  background-color: #dd0c0cd5;
   border: 1px solid red;
+}
+
+.card .b2:hover {
+  background-color: rgb(224, 3, 3);
 }
 
 .card-pricing.popular {
