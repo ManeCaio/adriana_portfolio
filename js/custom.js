@@ -35,6 +35,7 @@
 
 })(jQuery);
 
+/* Projetos */
 const showProjectsButton = document.querySelector('.btn-show-project');
 const projectHidden = document.querySelectorAll('.projects:not(.active)');
 
@@ -48,6 +49,7 @@ showProjectsButton.addEventListener('click', () => {
     showProjectsButton.classList.add("hidden");
 });
 
+/* Envio de mensagem, formulário */
 document.getElementById('whatsappForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Previne o envio padrão do formulário
 
@@ -58,6 +60,32 @@ document.getElementById('whatsappForm').addEventListener('submit', function(even
 
   // Formata a mensagem para ser enviada
   const formattedMessage = `Olá, meu nome é ${encodeURIComponent(name)}, ${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/5521964735727?text=${formattedMessage}`;
+
+  // Redireciona para o WhatsApp
+  window.open(whatsappUrl, '_blank');
+});
+
+/* Oferta experimental */
+document.getElementById('ReservaExperimental').addEventListener('submit', function(event) {
+  event.preventDefault(); // Previne o envio padrão do formulário
+
+
+  // Formata a mensagem para ser enviada
+  const formattedMessage = `Olá, vim do seu portfólio, gostaria de agendar uma sessão experimental com você!`;
+  const whatsappUrl = `https://wa.me/5521964735727?text=${formattedMessage}`;
+
+  // Redireciona para o WhatsApp
+  window.open(whatsappUrl, '_blank');
+});
+
+/* Oferta exclusiva */
+document.getElementById('ReservaExclusiva').addEventListener('submit', function(event) {
+  event.preventDefault(); // Previne o envio padrão do formulário
+
+
+  // Formata a mensagem para ser enviada
+  const formattedMessage = `Olá, vim do seu portfólio, gostaria de agendar uma sessão exclusiva com você!`;
   const whatsappUrl = `https://wa.me/5521964735727?text=${formattedMessage}`;
 
   // Redireciona para o WhatsApp
